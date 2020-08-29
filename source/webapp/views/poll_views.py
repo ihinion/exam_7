@@ -15,7 +15,12 @@ class IndexView(ListView):
     template_name = 'poll/index.html'
     context_object_name = 'polls'
     model = Poll
-    paginate_by = 2
+    paginate_by = 5
+
+    def get_queryset(self):
+        queryset = super().get_queryset()
+        queryset = queryset.order_by('-created_at')
+        return queryset
 
 
 class PollCreateView(CreateView):
