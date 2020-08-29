@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block title %}Poll #{{ poll.pk }} {% endblock %}}
+{% block content %}
+    {% include 'partial/poll_card.html' %}
+    <hr class="mt-4">
+    <h4 class="my-4">Answers:</h4>
+    <p>This poll has no answers yet</p>
+{% endblock %}
