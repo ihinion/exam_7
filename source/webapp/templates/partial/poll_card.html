@@ -6,6 +6,9 @@
             {% if 'poll' not in request.path %}
                 <a class="btn btn-primary btn-sm mr-3" href="{% url 'poll_view' poll.pk %}" role="button">View</a>
             {% endif %}
+            {% if 'poll' in request.path %}
+                <a class="btn btn-primary btn-sm mr-3" href="{% url 'choice_create' poll.pk %}" role="button">Add choice</a>
+            {% endif %}
             <a class="btn btn-danger btn-sm mr-3" href="{% url 'poll_delete' poll.pk %}" role="button">Delete</a>
             <a class="btn btn-info btn-sm mr-3" href="{% url 'poll_update' poll.pk %}" role="button">Update</a>
             {% if request.path != '/' %}

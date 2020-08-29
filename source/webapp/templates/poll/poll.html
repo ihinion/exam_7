@@ -4,5 +4,10 @@
     {% include 'partial/poll_card.html' %}
     <hr class="mt-4">
     <h4 class="my-4">Answers:</h4>
-    <p>This poll has no answers yet</p>
+    {% for choice in poll.choice_set.all %}
+        {% include 'partial/choice_card.html' %}
+    {% endfor %}
+    {% if not poll.choice_set.all %}
+        <p>This poll has no answers yet</p>
+    {% endif %}
 {% endblock %}
