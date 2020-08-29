@@ -17,3 +17,12 @@ class Choice(models.Model):
 
     def __str__(self):
         return self.text
+
+
+class Answer(models.Model):
+    poll = models.ForeignKey('webapp.Poll', on_delete=models.CASCADE, verbose_name='Poll')
+    choice = models.ForeignKey('webapp.Choice', on_delete=models.CASCADE, verbose_name='Choice')
+    created_at = models.DateTimeField(auto_now_add=True, verbose_name='Created at')
+
+    def __str__(self):
+        return f'Answer #{self.pk}. Poll: {self.poll.text}, Choice: {self.choice.text}'
