@@ -32,6 +32,14 @@
   }
 },
 {
+  "model": "webapp.poll",
+  "pk": 5,
+  "fields": {
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi hic laudantium nulla qui, quia reiciendis rem sed ut vel?",
+    "created_at": "2020-08-29T06:19:42.425Z"
+  }
+},
+{
   "model": "webapp.choice",
   "pk": 1,
   "fields": {
@@ -80,9 +88,117 @@
   "model": "webapp.choice",
   "pk": 6,
   "fields": {
-    "text": "Two week ago i did THIS and made 4000$ since then, if you want to make big money like me just follow this lin....",
+    "text": "Two week ago i did THIS and made 4000$ follow the lin....",
     "poll": 1,
     "created_at": "2020-08-29T05:27:53.449Z"
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 7,
+  "fields": {
+    "text": "Probably not",
+    "poll": 5,
+    "created_at": "2020-08-29T07:05:46.302Z"
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 8,
+  "fields": {
+    "text": "Perhaps yes",
+    "poll": 5,
+    "created_at": "2020-08-29T07:05:55.427Z"
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 1,
+  "fields": {
+    "poll": 1,
+    "choice": 5,
+    "created_at": "2020-08-29T09:16:49.522Z"
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 2,
+  "fields": {
+    "poll": 1,
+    "choice": 5,
+    "created_at": "2020-08-29T09:17:05.755Z"
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 3,
+  "fields": {
+    "poll": 1,
+    "choice": 1,
+    "created_at": "2020-08-29T09:19:29.466Z"
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 4,
+  "fields": {
+    "poll": 1,
+    "choice": 4,
+    "created_at": "2020-08-29T09:24:59.818Z"
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 5,
+  "fields": {
+    "poll": 1,
+    "choice": 5,
+    "created_at": "2020-08-29T09:25:25.888Z"
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 14,
+  "fields": {
+    "poll": 1,
+    "choice": 6,
+    "created_at": "2020-08-29T11:18:19.985Z"
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 15,
+  "fields": {
+    "poll": 1,
+    "choice": 1,
+    "created_at": "2020-08-29T11:26:56.933Z"
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 16,
+  "fields": {
+    "poll": 1,
+    "choice": 5,
+    "created_at": "2020-08-29T11:27:52.173Z"
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 17,
+  "fields": {
+    "poll": 1,
+    "choice": 1,
+    "created_at": "2020-08-29T11:38:56.801Z"
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 18,
+  "fields": {
+    "poll": 1,
+    "choice": 1,
+    "created_at": "2020-08-29T11:45:37.646Z"
   }
 },
 {
