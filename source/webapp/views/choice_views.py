@@ -1,6 +1,6 @@
 from django.shortcuts import get_object_or_404, redirect
 from django.urls import reverse
-from django.views.generic import CreateView, UpdateView
+from django.views.generic import CreateView, UpdateView, DeleteView
 
 from webapp.forms import ChoiceForm
 from webapp.models import Choice, Poll
@@ -23,6 +23,14 @@ class ChoiceUpdateView(UpdateView):
     template_name = 'choice/choice_update.html'
     model = Choice
     form_class = ChoiceForm
+
+    def get_success_url(self):
+        return reverse('poll_view', kwargs={'pk': self.object.poll.pk})
+
+
+class ChoiceDeleteView(DeleteView):
+    template_name = 'choice/choice_delete.html'
+    model = Choice
 
     def get_success_url(self):
         return reverse('poll_view', kwargs={'pk': self.object.poll.pk})

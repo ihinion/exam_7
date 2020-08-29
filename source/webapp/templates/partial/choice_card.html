@@ -4,6 +4,7 @@
         <p><b>Created at:</b> {{ choice.created_at }}</p>
         <form class="form-inline">
             <a class="btn btn-info btn-sm mr-3" href="{% url 'choice_update' choice.pk %}" role="button">Update</a>
+            <a class="btn btn-danger btn-sm mr-3" href="{% url 'choice_delete' choice.pk %}" role="button">Delete</a>
         </form>
     </div>
 </div>
