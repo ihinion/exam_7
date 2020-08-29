@@ -2,5 +2,8 @@
     <div class="card-body">
         <h5 class="card-title font-weight-bold">Choice: {{ choice.text }}</h5>
         <p><b>Created at:</b> {{ choice.created_at }}</p>
+        <form class="form-inline">
+            <a class="btn btn-info btn-sm mr-3" href="{% url 'choice_update' choice.pk %}" role="button">Update</a>
+        </form>
     </div>
 </div>
