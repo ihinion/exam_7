@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.urls import reverse
-from django.views.generic import DetailView, ListView, CreateView
+from django.views.generic import DetailView, ListView, CreateView, UpdateView, DeleteView
 
 from webapp.forms import PollForm
 from webapp.models import Poll
@@ -27,6 +27,15 @@ class PollCreateView(CreateView):
     template_name = 'poll/poll_create.html'
     form_class = PollForm
     model = Poll
+
+    def get_success_url(self):
+        return reverse('poll_view', kwargs={'pk': self.object.pk})
+
+
+class PollUpdateView(UpdateView):
+    template_name = 'poll/poll_update.html'
+    model = Poll
+    form_class = PollForm
 
     def get_success_url(self):
         return reverse('poll_view', kwargs={'pk': self.object.pk})

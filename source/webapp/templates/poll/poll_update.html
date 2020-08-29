@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}Update poll{% endblock %}
+{% block content %}
+    <div class="container">
+        <h2 class="my-3">Update poll</h2>
+        {% url "poll_update" pk=poll.pk as action_url %}
+        {% include 'partial/form.html' with action_url=action_url form_method='post' button_text='Update' %}
+        <a class="btn btn-secondary mt-2" href="{% url 'poll_view' poll.pk %}" role="button">Cancel</a><br>
+    </div>
+{% endblock %}
+
