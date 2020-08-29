@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block title %}Add poll{% endblock %}
+{% block content %}
+    <h1>Add poll</h1>
+    {% url "poll_create" as action_url %}
+    {% include 'partial/form.html' with button_text='Create' action_url=action_url form_method='post' %}
+    <a class="btn btn-secondary mt-2" href="{% url 'index_view' %}" role="button">Cancel</a><br>
+{% endblock %}
