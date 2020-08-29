@@ -1,0 +1,106 @@
+[
+{
+  "model": "webapp.poll",
+  "pk": 1,
+  "fields": {
+    "text": "Lorem ipsum?",
+    "created_at": "2020-08-29T05:23:00.998Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 2,
+  "fields": {
+    "text": "Ipsum lorem?",
+    "created_at": "2020-08-29T05:23:08.753Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 3,
+  "fields": {
+    "text": "Is it OK to have multiple lorems?",
+    "created_at": "2020-08-29T05:23:23.840Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 4,
+  "fields": {
+    "text": "More lorems to the G-d of lorems",
+    "created_at": "2020-08-29T05:23:56.560Z"
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 1,
+  "fields": {
+    "text": "Lorem ipsum!!!",
+    "poll": 1,
+    "created_at": "2020-08-29T05:24:13.217Z"
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 2,
+  "fields": {
+    "text": "Yes, ipsum lorem indeed",
+    "poll": 2,
+    "created_at": "2020-08-29T05:24:27.724Z"
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 3,
+  "fields": {
+    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has.\r\nIt doesn't answer your question but i didn't intend to",
+    "poll": 3,
+    "created_at": "2020-08-29T05:25:22.968Z"
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 4,
+  "fields": {
+    "text": "Cthulhu fhtagn",
+    "poll": 4,
+    "created_at": "2020-08-29T05:25:50.050Z"
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 5,
+  "fields": {
+    "text": "Another lorem ipsum question?",
+    "poll": 1,
+    "created_at": "2020-08-29T05:26:35.888Z"
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 6,
+  "fields": {
+    "text": "Two week ago i did THIS and made 4000$ since then, if you want to make big money like me just follow this lin....",
+    "poll": 1,
+    "created_at": "2020-08-29T05:27:53.449Z"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$iBjDG04X7eSj$eyHRRrb7L3GnnBbnj5+FWUiLxVaeuS5EvHSpan2J4sg=",
+    "last_login": "2020-08-29T05:21:57.774Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2020-08-29T01:59:48.305Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
